@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "C:\\Users\\sansam\\Desktop\\js"
+		},
+		{
+			"path": "form"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "js",
+		"liveServer.settings.port": 5501
+	}
+}

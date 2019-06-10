@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>navbar</title>
+    <style>
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+    </style>
+</head>
+<body onload="myFunction()">
+<script src="script.js"></script>
+
+<!--------------------navigation -->
+<nav class="navbar navbar-expand-lg  bg-light navbar-default navbar-light"> 
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+  
+  
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link home" href="#" id="home" onclick="clickhome()">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link samir" href="#" onclick="showList()">Samir</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/js/form/form.html" >login</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                user
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="" onclick="clickout()">log out</a>
+                <a class="dropdown-item" href="#" onclick="clickprofile()">profile</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            
+          </ul>
+         
+        </div>
+      </nav>
+ <!--------------------------landing-->
+      <section class="landing">
+            <h1 id="print" class="print">
+                Welcome to this page.
+            </h1>
+
+            <div class="hobby">
+                <h2 class="hobby-heading">
+                  My Hobbies are as follows......
+                </h2>
+                <ul class="hobby-list">
+                  <li class="hobby-item">Singing</li>
+                  <li class="hobby-item">singing</li>
+                  <li class="hobby-item">singing</li>
+                  <li class="hobby-item">singing</li>
+                </ul>
+                <button id="add" onclick="add()">Add</button>
+                <button id="remove" onclick="remove()">Remove</button>
+
+                <ol class="unordered">
+                  <li class="ol-list">cake</li>
+                  <li class="ol-list">biscuit</li>
+                  <li class="ol-list">cracker</li>
+                  <li class="ol-list">cookies</li>
+                
+                </ol>
+            </div>
+      </section>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
